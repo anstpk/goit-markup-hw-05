@@ -446,7 +446,7 @@
           <p class="social-media">Subscribe</p>
           <form class="subscribe-form">
             <label>
-              <input type="email" name="email" placeholder="E-mail" required />
+              <input type="email" class="subscribe-field" name="email" placeholder="E-mail" required />
             </label>
             <button type="submit" class="subscribe-button">
               Subscribe
@@ -460,7 +460,7 @@
     </footer>
 
     <!-- modal -->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <button class="modal-close" type="button" aria-label="Закрити">
           <svg class="icon" width="8" height="8">
@@ -493,9 +493,6 @@
             <label class="field-name" for="user-phone">Phone</label>
 
             <div class="input-wrap">
-              <svg class="form-svg" width="18" height="24">
-                <use href="./images/icons.svg#icon-phone-black"></use>
-              </svg>
               <input
                 class="input-field"
                 id="user-phone"
@@ -503,15 +500,15 @@
                 name="phone"
                 required
               />
+              <svg class="form-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
             </div>
           </div>
 
           <div class="contacts-input">
-            <label class="field-name" for="user-email">E-mail</label>
+            <label class="field-name" for="user-email">Email</label>
             <div class="input-wrap">
-              <svg class="form-svg" width="18" height="24">
-                <use href="./images/icons.svg#icon-icon-email"></use>
-              </svg>
               <input
                 class="input-field"
                 id="user-email"
@@ -519,6 +516,9 @@
                 name="email"
                 required
               />
+              <svg class="form-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-icon-email"></use>
+              </svg>
             </div>
           </div>
 
@@ -534,16 +534,22 @@
           </div>
 
           <div class="form-checkbox">
-            <input class="checkbox-input visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" required />
-
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              required
+            />
             <label class="checkbox-field" for="user-privacy">
-                I accept the terms and conditions of the
-                <a href="#" class="policy">Privacy Policy</a>
               <span class="checkbox-custom">
                 <svg class="form-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
+              I accept the terms and conditions of the
+              <a href="#" class="policy">Privacy Policy</a>
             </label>
           </div>
 
